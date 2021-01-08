@@ -128,4 +128,12 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /.idea/workspace.xml
-.vscode/settings.json
+.vscode/*
+
+#pycharm
+.idea/*
+dados/.idea/*
+notebooks/.idea/*
+src/.idea/*
+
+
