@@ -52,8 +52,12 @@ def main():
     st.title('Minha aplicação')
     st.markdown('Este trabalho tem o intuito de analisar obitos comparando **2019 e 2020**')
 
+    # Side bar
+    st.sidebar.title('Opções')
     opcao_doenca = st.sidebar.selectbox('Selecione o tipo de doença', tipo_doenca, 7)
     opcao_estado = st.sidebar.selectbox('Selecione o tipo de doença', tipo_estado, 27)
+
+    # Main
     figura = grafico_comparativo(obitos_2019, obitos_2020, opcao_doenca, opcao_estado)
     st.pyplot(figura)
 
